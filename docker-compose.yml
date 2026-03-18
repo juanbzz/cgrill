@@ -1,0 +1,12 @@
+# Run the coding agent inside a Docker container.
+# Env vars are passed from the host (loaded via direnv).
+# network_mode: host lets the container reach the local LLM server.
+services:
+  agent:
+    build: .
+    network_mode: host
+    environment:
+      - BASE_URL
+      - MODEL
+      - API_KEY
+      - CONTEXT_LIMIT
