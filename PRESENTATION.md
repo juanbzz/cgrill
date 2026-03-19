@@ -1,5 +1,13 @@
 # Building a Coding Agent with Python + Docker
 
+---
+
+## Building a Coding Agent with Python + Docker
+
+---
+
+## Building a Coding Agent with Python + Docker
+
 **What's a Coding Agent?**
 A program that uses an LLM to write and execute code autonomously.
 
@@ -32,19 +40,13 @@ Previously:
 
 A program that can write, run, and fix code on its own.
 
-**What does it do?**
+### How?
+
 You describe a task in plain English. The agent figures out
 what commands to run, executes them, reads the results, and
-keeps going until the task is done.
+keeps going until the task is done. This is called the _Agent Loop_.
 
-**How does it work?**
-It uses a Large Language Model (LLM) to decide what to do next.
-After each step, it looks at the output and decides whether to
-continue or finish.
-
----
-
-## The Agent Loop
+### The Agent Loop
 
 The core of the agent is a loop. We send the user's task to the LLM,
 parse a bash command from its response, run it, and feed the output
@@ -61,6 +63,10 @@ User Task
    |         feedback              |
    +-------------------------------+
 ```
+
+It uses a Large Language Model (LLM) to decide what to do next.
+After each step, it looks at the output and decides whether to
+continue or finish.
 
 ---
 
