@@ -72,6 +72,7 @@ Your response must contain exactly ONE bash code block.
 
 Rules:
 - ONE command per response
+- Use heredocs (cat << 'EOF') to write files
 - Do exactly what was asked. Nothing more.
 - When done: echo TASK_COMPLETE
 """

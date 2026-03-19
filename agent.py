@@ -27,6 +27,7 @@ your_command_here
 Rules:
 - ONE command per response. Never chain commands with ; or newlines.
 - Commands connected with && or || count as one command and are allowed.
+- When writing files, use heredocs (cat << 'EOF' > file.ext) to avoid quoting issues.
 - Do exactly what was asked. Nothing more.
 - When the task is fully complete, your final command MUST be: echo TASK_COMPLETE
   Do not combine it with any other command."""
